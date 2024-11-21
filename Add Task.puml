@@ -1,0 +1,12 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+User -> System: Add Task
+System --> User: Add task details
+User -> System: Enter task details
+System --> User: Confirm Task added successfully
+
+
+@enduml
