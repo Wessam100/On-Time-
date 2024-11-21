@@ -3,6 +3,8 @@
 
 autonumber
 
+actor User #Pink
+entity System #darkblue
 User -> System: Add Task
 System --> User: Add task details
 User -> System: Enter task details

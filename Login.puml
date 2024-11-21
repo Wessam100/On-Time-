@@ -1,0 +1,16 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+actor User #Pink
+entity System #darkblue
+User -> System: Enter username and password.
+System --> User: Validate credentials (check if the username and password match).
+
+alt valid
+System -> User: "Grant access" and display tasks.
+else unvalid
+System -> User: "Display error message" ("Invalid username or password").
+end
+@enduml
