@@ -9,6 +9,6 @@ activate User
 User -> System: getTaskDetails(taskID)
 activate System
 System --> User: returnTaskDetails(taskName)
-User -> System: setReminder(taskID, date, time)
+User -> System: setReminder(taskID, date, time, recurrence)
 System --> User: confirmReminderSet()
 @enduml

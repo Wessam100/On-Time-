@@ -13,6 +13,6 @@ System --> User: returnValidationResult(isValid)
 alt valid
     System -> User: grantAccess() and displayTasks()
 else invalid
-    System -> User: displayErrorMessage("Invalid username or password")
+    System -> User: ErrorMessage("Invalid username or password")
 end
 @enduml

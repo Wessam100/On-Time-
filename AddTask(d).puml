@@ -9,7 +9,7 @@ activate User
 User -> System: createTask(taskDetails)
 activate System
 System --> User: returnTaskDetailsForm()
-User -> System: submitTaskDetails(taskName, taskDescription, dueDate)
+User -> System: submitTaskDetails(title, Description, dueDate, priority , status)
 System --> User: confirmTaskAddedSuccessfully()
 
 @enduml
