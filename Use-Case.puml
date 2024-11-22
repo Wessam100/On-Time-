@@ -9,7 +9,7 @@ rectangle "Task Management System" {
     
     rectangle "Task Management" {
         usecase "Add Task" as UC2
-        usecase "Set Task Description" as UC3
+        usecase "Set Task Attributes" as UC3
         usecase "Set Task Reminder" as UC4
         usecase "Update Task" as UC7
         usecase "Change Task Status" as UC6
@@ -23,11 +23,10 @@ rectangle "Task Management System" {
     }
 
     rectangle "Reporting" {
-        usecase "Calculate Report" as UC11
+       
         usecase "Display Report per Timeframe" as UC12
     }
 
-    usecase "Get Datetime" as UC13
 }
 
 ' User interactions
@@ -38,7 +37,8 @@ user --> UC6
 user --> UC8
 user --> UC10
 user --> UC12
-
+user --> UC7
+user --> UC6
 
 
 ' Relationships between use cases
@@ -46,12 +46,9 @@ UC2 --> UC3 : includes
 UC2 --> UC4 : includes
 UC7 --> UC3 : includes
 UC7 --> UC4 : includes
-UC6 --> UC7 : includes
-UC7 --> UC6 : includes
-UC6 --> UC11 : triggers
-UC8 --> UC11 : triggers
-UC11 --> UC12 : generates
-UC13 --> UC9 : trigger
+
+
+
 
 ' Reminder notifications
 UC9 --> user
