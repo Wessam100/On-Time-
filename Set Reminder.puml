@@ -1,4 +1,4 @@
-@startuml
+@startuml Set Reminder Sequence Diagram
 'https://plantuml.com/sequence-diagram
 
 autonumber

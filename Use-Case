@@ -1,0 +1,71 @@
+@startuml use-case
+left to right direction
+
+actor system
+actor user 
+
+
+rectangle "Task Management System" {
+    usecase "Create Account" as UC1
+    usecase "Initialize Account" as UC15
+    
+    rectangle "Task Management" {
+        usecase "Add Task" as UC2
+        usecase "Set Task Description" as UC3
+        usecase "Set Task Reminder" as UC4
+        usecase "Update Task" as UC7
+        usecase "Change Task Status" as UC6
+        usecase "Remove Task" as UC8
+        usecase "Search Tasks" as UC5
+    }
+
+    rectangle "Reminders" {
+        usecase "Receive Reminder" as UC9
+        usecase "Snooze Reminder" as UC10
+        usecase "Send Reminder" as UC14
+    }
+
+    rectangle "Reporting" {
+        usecase "Calculate Report" as UC11
+        usecase "Display Report per Timeframe" as UC12
+    }
+
+    usecase "Get Datetime" as UC13
+}
+
+' User interactions
+user --> UC1
+user --> UC2
+user --> UC5
+user --> UC6
+user --> UC8
+user --> UC10
+user --> UC12
+
+' System interactions
+system --> UC15
+system --> UC14
+
+' System communication with use cases
+UC1 --> system
+UC13 --> system
+UC2 --> system
+UC6 --> system
+UC5 --> system
+UC7 --> system
+
+' Relationships between use cases
+UC2 --> UC3 : includes
+UC2 --> UC4 : includes
+UC7 --> UC3 : includes
+UC7 --> UC4 : includes
+UC6 --> UC7 : includes
+UC7 --> UC6 : includes
+UC6 --> UC11 : triggers
+UC8 --> UC11 : triggers
+UC11 --> UC12 : generates
+UC14 --> UC9 : triggers
+
+' Reminder notifications
+UC9 --> user
+@enduml
