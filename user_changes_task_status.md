@@ -1,6 +1,6 @@
 # Use Case 6
 
-## 1. Title : User Changer Task Status
+## 1. Title :  Change Task Status
 
 ## 2. Actors
 - **Primary Actor(s):** The User

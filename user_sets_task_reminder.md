@@ -1,7 +1,7 @@
 
 # Use Case 3
 
-## 1. Title : User Sets Task Reminder
+## 1. Title : Set Task Reminder
 
 ## 2. Actors
 - **Primary Actor(s):** The User

@@ -1,7 +1,7 @@
 
 # Use Case 2
 
-## 1. Title : User Sets Task Attributes
+## 1. Title : Set Task Attributes
 
 ## 2. Actors
 - **Primary Actor(s):** The User

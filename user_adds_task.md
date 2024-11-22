@@ -1,6 +1,6 @@
 # Use Case 1
 
-## 1. Title : User Addes New Task
+## 1. Title : Add New Task
 
 ## 2. Actors
 - **Primary Actor(s):** The User

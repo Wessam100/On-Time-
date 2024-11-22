@@ -1,6 +1,6 @@
 # Use Case 5
 
-## 1. Title : User Removes Existing Task
+## 1. Title :  Remove Existing Task
 
 ## 2. Actors
 - **Primary Actor(s):** The User

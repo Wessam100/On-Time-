@@ -1,6 +1,6 @@
 # Use Case 4
 
-## 1. Title : User Updates Existing Task
+## 1. Title : Update Existing Task
 
 ## 2. Actors
 - **Primary Actor(s):** The User
