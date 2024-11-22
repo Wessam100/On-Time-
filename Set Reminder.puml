@@ -4,11 +4,15 @@
 autonumber
 actor User #Pink
 entity System #darkblue
-
+activate User
 User -> System: Select a task.
+activate System
 System --> User: Return task details (task name).
 User -> System: Select "Set Reminder."
 System --> User: Display reminder options (date, time).
 User -> System: Enter reminder details and submit.
 System --> User: Confirm Reminder is set successfully.
 @enduml
+
+
+

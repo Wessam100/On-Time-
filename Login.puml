@@ -5,7 +5,9 @@ autonumber
 
 actor User #Pink
 entity System #darkblue
+activate User
 User -> System: Enter username and password.
+activate System
 System --> User: Validate credentials (check if the username and password match).
 
 alt valid

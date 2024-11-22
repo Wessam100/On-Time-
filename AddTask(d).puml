@@ -1,0 +1,15 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+actor User #Pink
+entity System #darkblue
+activate User
+User -> System: createTask(taskDetails)
+activate System
+System --> User: returnTaskDetailsForm()
+User -> System: submitTaskDetails(taskName, taskDescription, dueDate)
+System --> User: confirmTaskAddedSuccessfully()
+
+@enduml

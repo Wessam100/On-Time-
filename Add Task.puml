@@ -5,7 +5,9 @@ autonumber
 
 actor User #Pink
 entity System #darkblue
+activate User
 User -> System: Add Task
+activate System
 System --> User: Add task details
 User -> System: Enter task details
 System --> User: Confirm Task added successfully
